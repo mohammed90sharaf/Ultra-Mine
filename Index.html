@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ultra Mine | سرور ماینکرفت</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<header class="navbar">
+<div class="logo">
+<div class="cube"></div>
+<div>
+<div class="logo-title">ULTRA MINE</div>
+<div class="logo-sub">اولترا ماین | سرور ماینکرفت فارسی</div>
+</div>
+</div>
+<nav class="links" id="navLinks">
+<a href="#home">خانه</a>
+<a href="#modes">حالت‌ها</a>
+<a href="#shop">فروشگاه</a>
+<a href="#rules">قوانین</a>
+<a href="#faq">سوالات</a>
+</nav>
+<div class="nav-actions">
+<span class="online-badge"><span class="dot"></span> <b id="onlineCount">16</b> آنلاین</span>
+<button class="btn btn-neon" onclick="openLogin()">ورود / ثبت‌نام</button>
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<div class="tag">🔥 فصل 4 افتتاح شد | نسخه 1.8 تا 1.21.11</div>
+<h1>ULTRA <span>MINE</span></h1>
+<p class="hero-desc">بزرگ‌ترین سرور ماینکرفت فارسی با بیش از ۵ سال سابقه. بقا، اسکای‌بلاک، بدوارز و ایونت‌های هفتگی با جایزه. بدون لگ، با آنتی‌چیت قوی و کامیونیتی فعال.</p>
+<div class="ip-box">
+<span class="ip-label">آی‌پی سرور:</span>
+<b id="serverIp">play.ultramine.ir</b>
+<button class="btn btn-copy" onclick="copyIp()">کپی آی‌پی</button>
+</div>
+<div class="hero-btns">
+<a href="#shop" class="btn btn-big-neon">🛒 فروشگاه و درگاه پرداخت</a>
+<button class="btn btn-big-ghost" onclick="openLogin()">👤 ورود به پنل کاربری</button>
+</div>
+<div class="hero-stats">
+<div><b>+12K</b><span>بازیکن ثبت‌شده</span></div>
+<div><b>99%</b><span>آپتایم</span></div>
+<div><b>24/7</b><span>پشتیبانی</span></div>
+</div>
+</div>
+<div class="hero-visual">
+<div class="float-card c1">⛏️ Survival(به زودی)</div>
+<div class="float-card c2">🏝️ SMP</div>
+<div class="float-card c3">🛏️ BedWars(به زودی)</div>
+<div class="big-block">🧊</div>
+</div>
+</section>
+
+<section class="section" id="modes">
+<h2>🎮 حالت‌های بازی</h2>
+<p class="sub">چهار دنیای متفاوت، یک اکانت، یک ماجراجویی</p>
+<div class="cards">
+<div class="card">
+<div class="icon">⛏️</div>
+<h3>بقا | Survival</h3>
+<p>اقتصاد، شغل، کلن، خانه و فروشگاه بازیکنان. بدون پی‌تو‌وین واقعی.</p>
+<span class="players">🟢 0 آنلاین</span>
+</div>
+<div class="card featured">
+<div class="icon">🏝️</div>
+<h3>اسکای‌بلاک | SMP </h3>
+<p>جزیره‌تو بساز، ارتقا بده، توی رتبه‌بندی جزایر اول شو و جایزه بگیر.</p>
+<span class="players">🟢 10 آنلاین</span>
+</div>
+<div class="card">
+<div class="icon">🛏️</div>
+<h3>بدوارز | BedWars</h3>
+<p>تیم‌تو جمع کن، تخت حریف رو بزن و افسانه شو. تورنمنت هفتگی.</p>
+<span class="players">🟢 0 آنلاین</span>
+</div>
+<div class="card">
+<div class="icon">🎨</div>
+<h3>کریتیو | Creative</h3>
+<p>زمین رایگان، WorldEdit و مسابقه بیلد ماهانه با جایزه نقدی.</p>
+<span class="players">🟢 0 آنلاین</span>
+</div>
+</div>
+</section>
+
+<section class="section shop" id="shop">
+<h2>🛒 فروشگاه Ultra Mine</h2>
+<p class="sub">پرداخت امن از طریق درگاه، فعال‌سازی خودکار در کمتر از ۱ دقیقه</p>
+<div class="cards">
+<div class="card price">
+<h3>VIP</h3>
+<div class="price-num">89,000 <small>تومان</small></div>
+<ul>
+<li>✅ کیت هفتگی VIP</li>
+<li>✅ ۲ خانه بیشتر</li>
+<li>✅ تگ [VIP] در چت</li>
+<li>✅ صف ورود ویژه</li>
+</ul>
+<button class="btn btn-neon full" onclick="buyRank('VIP')">خرید + پرداخت</button>
+</div>
+<div class="card price hot">
+<div class="hot-label">پرفروش‌ترین 🔥</div>
+<h3>MVP</h3>
+<div class="price-num">189,000 <small>تومان</small></div>
+<ul>
+<li>✅ همه امکانات VIP</li>
+<li>✅ فلای در لابی + ذرات</li>
+<li>✅ کیت ماهانه MVP</li>
+<li>✅ ۵ خانه + اندرچست مجازی</li>
+</ul>
+<button class="btn btn-big-neon full" onclick="buyRank('MVP')">خرید + پرداخت</button>
+</div>
+<div class="card price">
+<h3>LEGEND</h3>
+<div class="price-num">349,000 <small>تومان</small></div>
+<ul>
+<li>✅ همه امکانات MVP</li>
+<li>✅ فلای در Survival</li>
+<li>✅ پت اختصاصی + نقاب</li>
+<li>✅ پشتیبانی VIP دیسکورد</li>
+</ul>
+<button class="btn btn-neon full" onclick="buyRank('LEGEND')">خرید + پرداخت</button>
+</div>
+</div>
+<div class="pay-note">🔒 پرداخت امن از طریق درگاه زرین‌پال / زیبال — بعد از پرداخت رنک به‌صورت خودکار روی اکانت ماینکرفت شما فعال می‌شود.</div>
+</section>
+
+<section class="section" id="rules">
+<h2>📜 قوانین سرور</h2>
+<div class="rules-grid">
+<div>🚫 چیت و هک = بن دائم</div>
+<div>🚫 فحاشی و توهین = میوت</div>
+<div>🚫 گریف و دزدی در بقا ممنوع</div>
+<div>✅ ریپورت با دستور /report</div>
+</div>
+</section>
+
+<section class="section" id="faq">
+<h2>❓ سوالات پرتکرار</h2>
+<details><summary>چطور وارد سرور بشم؟</summary><p>ماینکرفت جاوا یا بدراک رو باز کن، آی‌پی play.ultramine.ir رو بزن و وارد1. نسخه 1.8 تا 1.21 ساپورت می‌شود.</p></details>
+<details><summary>پنل کاربری به چه دردی می‌خوره؟</summary><p>از پنل می‌تونی رمزت رو عوض کنی، خرید‌هات رو ببینی و رنکت رو مدیریت کنی.</p></details>
+<details><summary>بعد از خرید از درگاه چه اتفاقی می‌افته؟</summary><p>بعد از پرداخت موفق، به‌صورت خودکار به سرور وصل می‌شیم و رنک روی یوزرنیم ماینکرفت‌ت فعال می‌شود.</p></details>
+</section>
+
+<footer>
+<b>ULTRA MINE © 2026</b>
+<p>دیسکورد: discord.gg/ultramine | تلگرام: (به زودی)@UltraMine_IR</p>
+</footer>
+
+<div class="modal" id="loginModal">
+<div class="modal-box">
+<button class="close" onclick="closeLogin()">✕</button>
+<h2>👤 پنل کاربری Ultra Mine</h2>
+<div class="tabs">
+<button id="tabLogin" class="active" onclick="switchTab('login')">ورود</button>
+<button id="tabRegister" onclick="switchTab('register')">ثبت‌نام</button>
+</div>
+<div id="formLogin">
+<input type="text" id="loginUser" placeholder="یوزرنیم ماینکرفت">
+<input type="password" id="loginPass" placeholder="رمز عبور">
+<button class="btn btn-big-neon full" onclick="doLogin()">ورود به پنل</button>
+</div>
+<div id="formRegister" style="display:none">
+<input type="text" id="regUser" placeholder="یوزرنیم ماینکرفت">
+<input type="password" id="regPass" placeholder="رمز عبور">
+<input type="password" id="regPass2" placeholder="تکرار رمز عبور">
+<button class="btn btn-big-neon full" onclick="doRegister()">ساخت اکانت</button>
+</div>
+<p class="msg" id="loginMsg"></p>
+</div>
+</div>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
